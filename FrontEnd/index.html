@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="pageContent" id="pageContentID">
+        <header class="header1">
+            <h1>Hello! I'm Matakala Hudson</h1>
+            <p>Software Engineer</p>
+        </header>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>A brief introduction...</p>
+        </section>
+        <section id="projects">
+            <h2>My Projects</h2>
+            <div id="project-gallery"></div>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <button id="download-resume">Download Resume</button>
+        </section>
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <div class="w3-section">
+                <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Lusaka, ZM</p>
+                <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +260 969-253-148</p>
+                <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Email: sammyhm69@gmail.com</p>
+            </div><br>
+            <p>Let's get in touch. Send me a message:</p>
+            <form id="contact-form">
+                <input type="text" id="name" name="name" placeholder="Name" autocomplete="name" required>
+                <input type="email" id="email" name="email" placeholder="Email" autocomplete="email" required>
+                <textarea id="message" name="message" placeholder="Message" required></textarea>
+                <button type="submit">MESSAGE</button>
+            </form>
+        </section>
+        <footer>
+            <div class="footer-content">
+                <p>Connect with me:</p>
+                <ul class="social-links">
+                    <li><a href="https://www.linkedin.com/in/samuel-matakala-913255257">LinkedIn</a></li>
+                    <li><a href="https://github.com/SAMMY-HM">GitHub</a></li>
+                    <li><a href="https://www.facebook.com/samuel.matakala">Facebook</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 Hudson. All rights reserved.</p>
+            </div>
+        </footer>
+        <section class="buttons">
+            <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

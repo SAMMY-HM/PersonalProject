@@ -1,0 +1,244 @@
+/* style.css */
+
+/* Set the box-sizing property for the entire document to border-box, 
+   ensuring that padding and border are included in the element's total width and height */
+   html {
+    box-sizing: border-box;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+  }
+  
+  /* Ensure all elements use border-box */
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  /* Style the header */
+  header {
+    background: #000000;
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Style the fixed navbar */
+  .navbar {
+    display: flex;
+    justify-content: center; /* Center the contents */
+    align-items: center;
+    background-color: #4CAF50;
+    height: 35px; /* Set the height of the navbar */
+    width: 100%; /* Take up the entire width of the viewport */
+    position: fixed; /* Fix the navbar position */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Ensure the navbar is above other elements */
+  }
+  
+  /* Style the navbar unordered list */
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Display the list items as a flex container */
+    align-items: center; /* Vertically center the items */
+    justify-content: center; /* Horizontally center the items */
+  }
+  
+  /* Style the navbar list items */
+  .navbar li {
+    margin-right: 1rem; /* Add some spacing between list items */
+  }
+  
+  /* Style the navbar links */
+  .navbar a {
+    padding: 6px 6px 6px 7px; /* Add padding to the links */
+    text-decoration: none;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    display: block; /* Display the links as block elements */
+  }
+  
+  /* Add hover effect to navbar links */
+  .navbar a:hover {
+    background-color: #333;
+    color: #f1f1f1;
+  }
+  
+  /* Adjust the page content margin to accommodate the fixed navbar */
+  .pageContent {
+    margin-top: 35px; /* Add margin top to prevent content from being hidden by the navbar */
+    padding: 0px; /* Add padding to the content */
+  }
+  
+  /* Style the sections of the page */
+  section {
+    padding: 2rem; /* Add padding to the sections */
+  }
+  
+  /* Style the div elements */
+  div {
+    background-color: #000000; /* Set background color */
+  }
+  
+  /* Style the contact form */
+  #contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    align-items: baseline;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  /* Button styling */
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: black;
+    color: #4CAF50;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  /* Add hover effect to buttons */
+  #myBtn:hover {
+    background-color: #555;
+  }
+  
+  /* Style the project gallery */
+  #project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  
+  /* Style individual projects */
+  .project {
+    background-color: #222;
+    padding: 1em;
+    border-radius: 5px;
+    width: calc(33% - 2em); /* Set the width of each project */
+    box-sizing: border-box; /* Include padding and border in the width */
+  }
+  
+  .project h3 {
+    margin: 0 0 0.5em; /* Add some margin to the heading */
+  }
+  
+  .project p {
+    margin: 0 0 1em; /* Add some margin to the paragraph */
+  }
+  
+  .project a {
+    display: inline-block; /* Display the links as inline-block */
+    margin-top: 1em; /* Add margin to the top of the links */
+    padding: 0.5em 1em; /* Add padding to the links */
+    color: #4CAF50;
+    text-decoration: none;
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s; /* Add transition effect */
+  }
+  
+  .project a:hover {
+    background: #333;
+    color: #fff;
+  }
+  
+  /* Media queries for responsiveness */
+  @media only screen and (max-width: 800px) {
+    /* Adjust navbar styles for smaller screens */
+    .navbar {
+      height: 50px; /* Reduce the height of the navbar */
+      padding: 0; /* Remove padding */
+    }
+  
+    /* Adjust page content margin for smaller screens */
+    .pageContent {
+      margin-top: 50px; /* Add top margin to push content below navbar */
+    }
+  
+    /* Adjust navbar links for smaller screens */
+    .navbar a {
+      padding: 14px 10px; /* Decrease padding for better touch experience */
+      text-align: center; /* Center-align the text */
+    }
+  
+    /* Style the navbar unordered list */
+    .navbar ul {
+      justify-content: space-around; /* Distribute items evenly */
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .project {
+      width: 100%; /* Adjust project width for smaller screens */
+    }
+  }
+  
+  /* Add styling for the footer */
+  footer {
+    background-color: #000000; /* Set background color */
+    color: white; /* Set text color */
+    padding: 10px; /* Add minimal padding */
+    text-align: center; /* Center-align text */
+    bottom: 0; /* Stick it to the bottom */
+    width: 100%; /* Take up the entire width */
+    z-index: 1; /* Ensure the footer is above other content */
+  }
+  
+  /* Style footer content */
+  .footer-content {
+    display: flex; /* Display content as flexbox */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  /* Style social links */
+  .social-links {
+    list-style: none; /* Remove default list style */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+  }
+  
+  .social-links li {
+    display: inline; /* Display list items inline */
+  }
+  
+  .social-links li:not(:last-child) {
+    margin-right: 10px; /* Add margin between social links */
+  }
+  
+  .social-links li a {
+    color: white; /* Set link color */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s; /* Add transition effect */
+    padding: 5px; /* Add padding to social links */
+  }
+  
+  .social-links li a:hover {
+    color: #4CAF50; /* Change link color on hover */
+  }
+  
+  /* Style copyright text */
+  .copyright {
+    margin-top: 5px; /* Add minimal margin to separate from social links */
+    margin: 0; /* Remove margin */
+    color: #4CAF50;
+  }
+  
