@@ -13,7 +13,7 @@ This project is a personal portfolio website showcasing my skills, projects, and
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/SAMMY-HM/portfolio-website.git
+   git clone https://github.com/SAMMY-HM/PersonalPortfolio.git
 
 ## Usage
 
@@ -21,12 +21,11 @@ This project is a personal portfolio website showcasing my skills, projects, and
     - cd Backend
     - node server.js
 
-    **Start the frontend server:**
-    - cd FrontEnd
-    - node server.js
+    **Start the frontend live-server:**
+    - live-server
 
     Navigate to the project directory:
-    - cd portfolio-website
+    - cd PersonalPortfolio
 
     Install dependencies:
     - npm install

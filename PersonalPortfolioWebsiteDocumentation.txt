@@ -1,0 +1,133 @@
+Personal Portfolio Website Documentation
+Introduction
+
+This documentation provides an overview of the file structure, functionality, routes, models, controllers, and environment variables for maintaining and referencing the Personal Portfolio Website.
+File Structure
+project-root/
+├── FrontEnd/
+│   ├── app.js
+│   ├── style.css
+│   ├── index.html
+│
+├── Backend/
+│   ├── controllers/
+│   │   ├── contactController.js
+│   │   ├── generateResumeController.js
+│   │
+│   ├── db/
+│   │   ├── database.js
+│   │
+│   ├── logs/
+│   │   ├── combined.log
+│   │   ├── error.log
+│   │
+│   ├── middleware/
+│   │   ├── errorHandler.js
+│   │
+│   ├── models/
+│   │   ├── messageModel.js
+│   │
+│   ├── node_modules/
+│   │
+│   ├── routes/
+│   │   ├── contact.js
+│   │   ├── generateResume.js
+│   │
+│   ├── utils/
+│   │   ├── emailService.js
+│   │   ├── logger.js
+│   │
+│   ├── .env
+│   ├── generateResume.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── server.js
+
+File and Directory Descriptions
+1. FrontEnd Directory
+
+    FrontEnd/app.js: Contains any client-side JavaScript code.
+    FrontEnd/style.css: Contains the CSS styles for the website.
+    FrontEnd/index.html: The main HTML file for the portfolio website.
+2. Backend Directory
+Controllers
+
+    Backend/controllers/contactController.js: Handles the logic for contact form submissions, including validation, saving messages to the database, and forwarding messages to the user's email.
+    Backend/controllers/generateResumeController.js: Manages the generation of the resume PDF.
+
+Database
+
+    Backend/db/database.js: Contains the setup for connecting to the SQLite database.
+
+Logs
+
+    Backend/logs/combined.log: Logs combined information.
+    Backend/logs/error.log: Logs error information.
+
+Middleware
+
+    Backend/middleware/errorHandler.js: Handles errors within the application.
+
+Models
+
+    Backend/models/messageModel.js: Defines the message schema and methods for interacting with the SQLite database.
+
+Routes
+
+    Backend/routes/contact.js: Defines the API routes for handling contact form submissions and retrieving messages.
+    Backend/routes/generateResume.js: Defines the API routes for generating resumes.
+
+Utils
+
+    Backend/utils/emailService.js: Handles sending emails for contact form submissions.
+    Backend/utils/logger.js: Configures and manages logging for the application.
+
+Root Files
+
+    .env: Contains environment variables.
+    generateResume.js: Script for generating resumes.
+    package.json: Lists dependencies and scripts for the Node.js project.
+    package-lock.json: Describes the exact dependency tree generated.
+    server.js: The main entry point of the Node.js application. It sets up the Express server, middleware, and routes.
+Environment Variables
+
+    .env:
+
+DB_HOST=
+DB_USER=
+DB_PASSWORD=
+DB_NAME=
+EMAIL_USER=
+EMAIL_PASS=
+EMAIL_SUBJECT=
+
+Routes
+Contact Routes (Backend/routes/contact.js)
+
+    POST /contact: Handles the submission of the contact form, saving the message to the database, and forwarding it to the specified email.
+    GET /messages: Retrieves all messages from the database.
+
+Generate Resume Routes (Backend/routes/generateResume.js)
+
+    POST /generateResume: Generates a resume PDF based on provided information.
+
+Models
+Message Model (Backend/models/messageModel.js)
+
+    Schema: Defines the structure of a message, including fields like name, email, subject, and message.
+    Methods: Includes methods for saving and retrieving messages from the SQLite database.
+
+Controllers
+Contact Controller (Backend/controllers/contactController.js)
+
+    handleContactForm: Processes the contact form data, validates input, saves the message to the database, and forwards it to the specified email address.
+
+Generate Resume Controller (Backend/controllers/generateResumeController.js)
+
+    generateResume: Handles the generation of the resume PDF, including adding content and formatting.
+
+Usage
+
+    Install Dependencies: Run npm install to install all necessary dependencies.
+    Environment Setup: Create a .env file in the root directory with the appropriate environment variables as shown above.
+    Run the Application: Start the application by running node server.js.
