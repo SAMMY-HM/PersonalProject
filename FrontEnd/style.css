@@ -112,7 +112,12 @@
     flex-direction: column;
     width: 100%;
   }
-  
+  /* Color for the contact section paragraph text that is within the section then the div  */
+  #contact div p{
+    color: #757575;
+
+  }
+ 
   /* Scroll Back to top Button styling */
   #myBtn {
     display: none;
