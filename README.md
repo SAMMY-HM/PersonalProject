@@ -15,7 +15,7 @@ This project is a personal portfolio website showcasing my skills, projects, and
    ```bash
    git clone https://github.com/SAMMY-HM/PersonalPortfolio.git
 
-## Usage
+## Usage(How to run the Web App)
 
     **Start the backend server:**
     - cd Backend
