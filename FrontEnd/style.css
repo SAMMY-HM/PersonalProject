@@ -1,13 +1,4 @@
 /* style.css */
-/* importing css fonts*/
-@font-face {
-  font-family: Montserrat;
-  src: url(https://fonts.googleapis.com/css?family=Montserrat);
-}
-@font-face {
-  font-family: Verdana;
-  src: url(https://www.cssfontstack.com/Verdana);
-}
 
 
 /* Set the box-sizing property for the entire document to border-box, 
@@ -16,6 +7,7 @@
     box-sizing: border-box;
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
+  /* Align the h1 tags and paragraph inside the header to be centered */
   h1, header p {
     text-align: center;
   }
@@ -29,10 +21,7 @@
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   body, h1, p {font-family: "Montserrat", sans-serif}
-  #about {
-    font-family: Verdana
-  }
-  
+
   /* Ensure all elements use border-box */
   *, *:before, *:after {
     box-sizing: inherit;
