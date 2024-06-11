@@ -11,6 +11,11 @@
   h1, header p {
     text-align: center;
   }
+  /* color of The text just below the h1 */
+
+  header p{
+    color: #757575;
+  }
   
   body {
     font-family: "Montserrat", Arial, sans-serif;
@@ -21,6 +26,10 @@
     overflow-x: hidden; /* Prevent horizontal scrolling */
   }
   body, h1, p {font-family: "Montserrat", sans-serif}
+
+  h2{
+    color: #4CAF50;
+  }
 
   /* Ensure all elements use border-box */
   *, *:before, *:after {
@@ -104,7 +113,7 @@
     width: 100%;
   }
   
-  /* Button styling */
+  /* Scroll Back to top Button styling */
   #myBtn {
     display: none;
     position: fixed;
@@ -148,6 +157,7 @@
   
   .project p {
     margin: 0 0 1em; /* Add some margin to the paragraph */
+    color:#b5b2b5
   }
   
   .project a {
